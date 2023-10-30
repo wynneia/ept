@@ -44,7 +44,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
     async function handleChangeGroupName() {
         const isSuccess = await changeGroupName(groupId, groupName);
         if (isSuccess) {
-            Message.success('修改群名称成功');
+            Message.success('Success');
             action.setLinkmanProperty(groupId, 'name', groupName);
         }
     }
@@ -128,11 +128,11 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                     visible ? Style.show : Style.hide
                 }`}
             >
-                <p className={Style.title}>群组信息</p>
+                <p className={Style.title}>Group information</p>
                 <div className={Style.content}>
                     {isLogin && selfId === creator ? (
                         <div className={Style.block}>
-                            <p className={Style.blockTitle}>修改群名称</p>
+                            <p className={Style.blockTitle}>Modify group name</p>
                             <Input
                                 className={Style.input}
                                 value={groupName}
@@ -180,7 +180,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                     </div>
                     <div className={Style.block}>
                         <p className={Style.blockTitle}>
-                            在线成员 &nbsp;<span>{onlineMembers.length}</span>
+                            Online members &nbsp;<span>{onlineMembers.length}</span>
                         </p>
                         <div>
                             {onlineMembers.map((member) => (

@@ -42,7 +42,7 @@ function GroupProfile() {
         <PageContainer>
             <ScrollView style={styles.container}>
                 <View style={styles.section}>
-                    <Text style={styles.sectionTitle}>功能</Text>
+                    <Text style={styles.sectionTitle}>Function</Text>
                     <Button danger onPress={handleLeaveGroup}>
                         <Text>{isGroupCreator ? '解散群组' : '退出群组'}</Text>
                     </Button>
