@@ -137,9 +137,9 @@ socket.on('message', async (message: any) => {
             } as AddLinkmanMessagePayload,
         });
         if (linkman.type === 'group') {
-            title = `${message.from.username} 在 ${linkman.name} 对大家说:`;
+            title = `${message.from.username} exist ${linkman.name} tell everyone:`;
         } else {
-            title = `${message.from.username} 对你说:`;
+            title = `${message.from.username} say to you:`;
         }
     } else {
         // 联系人不存在并且是自己发的消息, 不创建新联系人
@@ -162,7 +162,7 @@ socket.on('message', async (message: any) => {
                 focus: false,
             },
         });
-        title = `${message.from.username} 对你说:`;
+        title = `${message.from.username} say to you:`;
 
         const messages = await getLinkmanHistoryMessages(newLinkman._id, 0);
         if (messages) {

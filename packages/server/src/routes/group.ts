@@ -256,7 +256,7 @@ export async function changeGroupAvatar(
     }
     assert(
         group.creator.toString() === ctx.socket.user.toString(),
-        '只有群主才能修改头像',
+        'Only the group owner can modify the avatar',
     );
 
     await Group.updateOne({ _id: groupId }, { avatar });
@@ -281,7 +281,7 @@ export async function changeGroupName(
     assert(group.name !== name, '新群组名不能和之前一致');
     assert(
         group.creator.toString() === ctx.socket.user.toString(),
-        '只有群主才能修改头像',
+        'Only the group owner can modify the avatar',
     );
 
     const targetGroup = await Group.findOne({ name });
@@ -308,7 +308,7 @@ export async function deleteGroup(ctx: Context<{ groupId: string }>) {
     }
     assert(
         group.creator.toString() === ctx.socket.user.toString(),
-        '只有群主才能解散群组',
+        'Only the group owner can dissolve the group',
     );
     assert(group.isDefault !== true, '默认群组不允许解散');
 
