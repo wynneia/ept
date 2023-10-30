@@ -204,7 +204,7 @@ function SelfInfo(props: SelfInfoProps) {
                     </div>
                 </div>
                 <div className={Common.block}>
-                    <p className={Common.title}>修改密码</p>
+                    <p className={Common.title}>Change password</p>
                     <div>
                         <Input
                             className={Style.input}
@@ -224,7 +224,7 @@ function SelfInfo(props: SelfInfoProps) {
                             className={Style.button}
                             onClick={handleChangePassword}
                         >
-                            Confirm the changes
+                            Confirm
                         </Button>
                     </div>
                 </div>
@@ -242,7 +242,7 @@ function SelfInfo(props: SelfInfoProps) {
                             className={Style.button}
                             onClick={handleChangeUsername}
                         >
-                            Confirm the changes
+                            Confirm 
                         </Button>
                     </div>
                 </div>

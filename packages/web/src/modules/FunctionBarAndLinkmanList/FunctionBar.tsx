@@ -83,7 +83,7 @@ function FunctionBar() {
                 if (result?.users?.length || result?.groups?.length) {
                     setSearchResult(result);
                 } else {
-                    Message.warning('没有搜索到内容, 换个关键字试试吧~');
+                    Message.warning('No content was found, try changing the keywords~');
                     setSearchResult({ users: [], groups: [] });
                 }
             }
@@ -183,12 +183,12 @@ function FunctionBar() {
                 renderTabBar={() => <ScrollableInkTabBar />}
                 renderTabContent={() => <TabContent />}
             >
-                <TabPane tab="全部" key="all">
+                <TabPane tab="all" key="all">
                     {searchResult.users.length === 0 &&
                     searchResult.groups.length === 0 ? (
                             // eslint-disable-next-line react/jsx-indent
                             <p className={Style.none}>
-                                没有搜索到内容, 换个关键字试试吧~
+                                No content was found, try changing the keywords~
                             </p>
                         ) : (
                             <div className={Style.allList}>
@@ -257,10 +257,10 @@ function FunctionBar() {
                             </div>
                         )}
                 </TabPane>
-                <TabPane tab="用户" key="user">
+                <TabPane tab="user" key="user">
                     {searchResult.users.length === 0 ? (
                         <p className={Style.none}>
-                            没有搜索到内容, 换个关键字试试吧~~
+                            No content was found, try changing the keywords~
                         </p>
                     ) : (
                         <div className={`${Style.userList} ${Style.only}`}>
@@ -268,10 +268,10 @@ function FunctionBar() {
                         </div>
                     )}
                 </TabPane>
-                <TabPane tab="群组" key="group">
+                <TabPane tab="group" key="group">
                     {searchResult.groups.length === 0 ? (
                         <p className={Style.none}>
-                            没有搜索到内容, 换个关键字试试吧~~
+                            No content was found, try changing the keywords~
                         </p>
                     ) : (
                         <div className={`${Style.groupList} ${Style.only}`}>

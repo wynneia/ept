@@ -53,7 +53,7 @@ function HeaderBar(props: Props) {
     const aero = useAero();
 
     function handleShareGroup() {
-        Message.success('已复制邀请链接到粘贴板, 去邀请其它人加入群组吧');
+        Message.success("The invitation link has been copied. Let's invite others to join the group.");
     }
 
     return (

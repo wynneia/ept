@@ -90,7 +90,7 @@ function Expression(props: ExpressionProps) {
                     className={Style.searchExpressionButton}
                     onClick={handleSearchExpression}
                 >
-                    搜索
+                    Search
                 </Button>
             </div>
             <div
@@ -127,10 +127,10 @@ function Expression(props: ExpressionProps) {
                 renderTabBar={() => <ScrollableInkTabBar />}
                 renderTabContent={() => <TabContent />}
             >
-                <TabPane tab="默认表情" key="default">
+                <TabPane tab="Default emoticon" key="default">
                     {renderDefaultExpression}
                 </TabPane>
-                <TabPane tab="搜索表情包" key="search">
+                <TabPane tab="Search emoticon" key="search">
                     {renderSearchExpression}
                 </TabPane>
             </Tabs>

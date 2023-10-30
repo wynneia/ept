@@ -29,9 +29,9 @@ function CreateGroup(props: CreateGroupProps) {
     }
 
     return (
-        <Dialog title="创建群组" visible={visible} onClose={onClose}>
+        <Dialog title="Create new group" visible={visible} onClose={onClose}>
             <div className={Style.container}>
-                <h3 className={Style.text}>请输入群组名</h3>
+                <h3 className={Style.text}>Please enter a group name</h3>
                 <Input
                     className={Style.input}
                     value={groupName}
@@ -42,7 +42,7 @@ function CreateGroup(props: CreateGroupProps) {
                     onClick={handleCreateGroup}
                     type="button"
                 >
-                    创建
+                    Confirm
                 </button>
             </div>
         </Dialog>

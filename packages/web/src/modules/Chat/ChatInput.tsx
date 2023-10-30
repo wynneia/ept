@@ -120,7 +120,7 @@ function ChatInput() {
                         }
                         role="button"
                     >
-                        登录
+                        Login
                     </b>
                     后参与聊天
                 </p>
@@ -620,10 +620,10 @@ function ChatInput() {
                 overlay={
                     <div className={Style.featureDropdown}>
                         <Menu onClick={handleFeatureMenuClick}>
-                            <MenuItem key="huaji">发送滑稽</MenuItem>
-                            <MenuItem key="image">发送图片</MenuItem>
-                            <MenuItem key="code">发送代码</MenuItem>
-                            <MenuItem key="file">发送文件</MenuItem>
+                            <MenuItem key="huaji">Send funny</MenuItem>
+                            <MenuItem key="image">Send image</MenuItem>
+                            <MenuItem key="code">Send code</MenuItem>
+                            <MenuItem key="file">Send file</MenuItem>
                         </Menu>
                     </div>
                 }

@@ -159,7 +159,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                     ) : null}
 
                     <div className={Style.block}>
-                        <p className={Style.blockTitle}>功能</p>
+                        <p className={Style.blockTitle}>Function</p>
                         {selfId === creator ? (
                             <Button
                                 className={Style.button}
