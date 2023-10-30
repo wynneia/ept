@@ -52,7 +52,7 @@ function SelfInfo(props: SelfInfoProps) {
             const isSuccess = await changeAvatar(avatarUrl);
             if (isSuccess) {
                 action.setAvatar(URL.createObjectURL(blob));
-                Message.success('修改头像成功');
+                Message.success('Modified avatar successfully');
             }
         } catch (err) {
             console.error(err);
@@ -128,7 +128,7 @@ function SelfInfo(props: SelfInfoProps) {
         const isSuccess = await changeUsername(username);
         if (isSuccess) {
             onClose();
-            reLogin('修改用户名成功, 请使用新用户名重新登录');
+            reLogin('The username has been modified successfully, please log in again using the new username');
         }
     }
 
@@ -145,12 +145,12 @@ function SelfInfo(props: SelfInfoProps) {
         <Dialog
             className={Style.selfInfo}
             visible={visible}
-            title="个人信息设置"
+            title="Personal information settings"
             onClose={handleCloseDialog}
         >
             <div className={Common.container}>
                 <div className={Common.block}>
-                    <p className={Common.title}>修改头像</p>
+                    <p className={Common.title}>Modify avatar</p>
                     <div className={Style.changeAvatar}>
                         {cropper.enable ? (
                             <div className={Style.cropper}>
@@ -170,7 +170,7 @@ function SelfInfo(props: SelfInfoProps) {
                                     className={Style.button}
                                     onClick={handleChangeAvatar}
                                 >
-                                    修改头像
+                                    Modify avatar
                                 </Button>
                                 <ReactLoading
                                     className={`${Style.loading} ${
@@ -211,38 +211,38 @@ function SelfInfo(props: SelfInfoProps) {
                             value={oldPassword}
                             onChange={setOldPassword}
                             type="password"
-                            placeholder="旧密码"
+                            placeholder="Old Password"
                         />
                         <Input
                             className={Style.input}
                             value={newPassword}
                             onChange={setNewPassword}
                             type="password"
-                            placeholder="新密码"
+                            placeholder="New Password"
                         />
                         <Button
                             className={Style.button}
                             onClick={handleChangePassword}
                         >
-                            确认修改
+                            Confirm the changes
                         </Button>
                     </div>
                 </div>
                 <div className={Common.block}>
-                    <p className={Common.title}>修改用户名</p>
+                    <p className={Common.title}>Change username</p>
                     <div>
                         <Input
                             className={Style.input}
                             value={username}
                             onChange={setUsername}
                             type="text"
-                            placeholder="用户名"
+                            placeholder="Username"
                         />
                         <Button
                             className={Style.button}
                             onClick={handleChangeUsername}
                         >
-                            确认修改
+                            Confirm the changes
                         </Button>
                     </div>
                 </div>

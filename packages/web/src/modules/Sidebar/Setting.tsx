@@ -160,7 +160,7 @@ function Setting(props: SettingProps) {
                 renderTabBar={() => <ScrollableInkTabBar />}
                 renderTabContent={() => <TabContent />}
             >
-                <TabPane tab="功能" key="function">
+                <TabPane tab="Function" key="function">
                     <div
                         className={`${Common.container} ${Style.scrollContainer}`}
                     >

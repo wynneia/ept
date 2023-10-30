@@ -112,20 +112,10 @@ function Sidebar() {
                                 onClick={() => toggleAdminDialogVisible(true)}
                             />,
                         )}
+                  
                     {isLogin &&
                         renderTooltip(
-                            '设置',
-                            <IconButton
-                                width={40}
-                                height={40}
-                                icon="setting"
-                                iconSize={26}
-                                onClick={() => toggleSettingDialogVisible(true)}
-                            />,
-                        )}
-                    {isLogin &&
-                        renderTooltip(
-                            '退出登录',
+                            'Log out',
                             <IconButton
                                 width={40}
                                 height={40}

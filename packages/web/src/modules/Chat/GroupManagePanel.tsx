@@ -74,7 +74,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                     'avatar',
                     URL.createObjectURL(image.result),
                 );
-                Message.success('修改群头像成功');
+                Message.success('Changed avatar successfully');
             }
         } catch (err) {
             console.error(err);
@@ -88,7 +88,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
             setDialogStatus(false);
             onClose();
             action.removeLinkman(groupId);
-            Message.success('解散群组成功');
+            Message.success('Deleted group successfully');
         }
     }
 
@@ -142,13 +142,13 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                                 className={Style.button}
                                 onClick={handleChangeGroupName}
                             >
-                                确认修改
+                                Confirm
                             </Button>
                         </div>
                     ) : null}
                     {isLogin && selfId === creator ? (
                         <div className={Style.block}>
-                            <p className={Style.blockTitle}>修改群头像</p>
+                            <p className={Style.blockTitle}>Change group avatar</p>
                             <img
                                 className={Style.avatar}
                                 src={getOSSFileUrl(avatar)}
@@ -166,7 +166,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                                 type="danger"
                                 onClick={() => setDialogStatus(true)}
                             >
-                                解散群组
+                                Delete group
                             </Button>
                         ) : (
                             <Button
@@ -225,7 +225,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                     </div>
                     <Dialog
                         className={Style.deleteGroupConfirmDialog}
-                        title="再次确认是否解散群组?"
+                        title="Are you sure?"
                         visible={deleteConfirmDialog}
                         onClose={() => setDialogStatus(false)}
                     >
