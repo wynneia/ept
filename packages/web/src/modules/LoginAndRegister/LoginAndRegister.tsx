@@ -35,7 +35,7 @@ function LoginAndRegister() {
                 <TabPane tab="Login" key="login">
                     <Login />
                 </TabPane>
-                <TabPane tab="Register" key="register">
+                <TabPane tab="Sign Up" key="register">
                     <Register />
                 </TabPane>
             </Tabs>
