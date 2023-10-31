@@ -96,8 +96,8 @@ function InviteInfo() {
                     </div>
                     <div className={Style.info}>
                         <div className={Style.onlineStatus}>
-                            <p className={Style.onlineText}>member:</p>
-                            <div>{group.members}人</div>
+                            <p className={Style.onlineText}>member: </p>
+                            <div>{group.members}</div>
                         </div>
                         {selfId ? (
                             hasLinkman ? (
