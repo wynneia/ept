@@ -153,7 +153,7 @@ function UserInfo({ user }: Props) {
                             style={styles.button}
                             onPress={handleAddFriend}
                         >
-                            <Text>加为好友</Text>
+                            <Text>Add friend</Text>
                         </Button>
                     )}
                     {isAdmin && (

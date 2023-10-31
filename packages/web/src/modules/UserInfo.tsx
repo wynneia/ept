@@ -164,7 +164,7 @@ function UserInfo(props: UserInfoProps) {
                                     largerAvatar ? 'show' : 'hide'
                                 }`}
                                 src={getOSSFileUrl(user.avatar)}
-                                alt="用户头像"
+                                alt="profile picture"
                             />
                             <p>{user.username}</p>
                             <p className={Style.ip}>
@@ -182,7 +182,7 @@ function UserInfo(props: UserInfoProps) {
                         <div className={Style.info}>
                             {isFriend ? (
                                 <Button onClick={handleFocusUser}>
-                                    发送消息
+                                    Send a message
                                 </Button>
                             ) : null}
                             {isFriend ? (
@@ -190,11 +190,11 @@ function UserInfo(props: UserInfoProps) {
                                     type="danger"
                                     onClick={handleDeleteFriend}
                                 >
-                                    删除好友
+                                    Delete Friend
                                 </Button>
                             ) : (
                                 <Button onClick={handleAddFriend}>
-                                    加为好友
+                                    Add Friend
                                 </Button>
                             )}
                             {isAdmin ? (
