@@ -48,7 +48,7 @@ function GroupProfile() {
                     </Button>
                 </View>
                 <View style={styles.section}>
-                    <Text style={styles.sectionTitle}>在线成员</Text>
+                    <Text style={styles.sectionTitle}>online members</Text>
                     {linkman.members.map((member) => (
                         <View key={member._id} style={styles.member}>
                             <Avatar src={member.user.avatar} size={24} />
