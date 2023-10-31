@@ -7,13 +7,13 @@ import {
 
 export const CALL_SERVICE_FREQUENTLY = '发消息过于频繁, 请冷静一会再试';
 export const NEW_USER_CALL_SERVICE_FREQUENTLY =
-    '发消息过于频繁, 你还处于萌新期, 不要恶意刷屏, 先冷静一会再试';
+    "Don't spam";
 
-const MaxCallPerMinutes = 20;
-const NewUserMaxCallPerMinutes = 5;
+const MaxCallPerMinutes = 200000000000000000000;
+const NewUserMaxCallPerMinutes = 5000000000000000000000000;
 const ClearDataInterval = 60000;
 
-const AutoSealDuration = 5; // minutes
+const AutoSealDuration = 0; // minutes
 
 type Options = {
     maxCallPerMinutes?: number;
