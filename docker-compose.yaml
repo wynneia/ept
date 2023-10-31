@@ -13,5 +13,5 @@ services:
         ports:
             - '80:80'
         environment:
-            - Database=mongodb://mongodb/fiora
+            - Database=mongodb://mongodb/xcn
             - RedisHost=redis

@@ -234,13 +234,13 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                             type="danger"
                             onClick={handleDeleteGroup}
                         >
-                            确认
+                            Yes
                         </Button>
                         <Button
                             className={Style.deleteGroupConfirmButton}
                             onClick={() => setDialogStatus(false)}
                         >
-                            取消
+                            No
                         </Button>
                     </Dialog>
                 </div>
