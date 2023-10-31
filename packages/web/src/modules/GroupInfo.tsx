@@ -81,7 +81,7 @@ function GroupInfo(props: GroupInfoProps) {
                             largerAvatar ? 'show' : 'hide'
                         }`}
                         src={getOSSFileUrl(group.avatar)}
-                        alt="群组头像"
+                        alt="GA"
                     />
                     <p>{group.name}</p>
                 </div>
@@ -91,9 +91,9 @@ function GroupInfo(props: GroupInfoProps) {
                         <div>{group.members}人</div>
                     </div>
                     {hasLinkman ? (
-                        <Button onClick={handleFocusGroup}>发送消息</Button>
+                        <Button onClick={handleFocusGroup}>Send a message</Button>
                     ) : (
-                        <Button onClick={handleJoinGroup}>加入群组</Button>
+                        <Button onClick={handleJoinGroup}>Join Group</Button>
                     )}
                 </div>
             </div>
