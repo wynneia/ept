@@ -85,7 +85,7 @@ function GroupInfo({ group }: Props) {
                             style={styles.button}
                             onPress={handleJoinGroup}
                         >
-                            <Text>加入群组</Text>
+                            <Text>=Join</Text>
                         </Button>
                     )}
                 </View>

@@ -74,7 +74,7 @@ function InviteInfo() {
             className={Style.infoDialog}
             visible={visible}
             onClose={handleClose}
-            title="邀请您加入群组"
+            title="Invited you to join group"
         >
             {visible && group && (
                 <div className={Style.coantainer}>
@@ -96,7 +96,7 @@ function InviteInfo() {
                     </div>
                     <div className={Style.info}>
                         <div className={Style.onlineStatus}>
-                            <p className={Style.onlineText}>成员:</p>
+                            <p className={Style.onlineText}>member:</p>
                             <div>{group.members}人</div>
                         </div>
                         {selfId ? (
@@ -106,7 +106,7 @@ function InviteInfo() {
                                 </Button>
                             ) : (
                                 <Button onClick={handleJoinGroup}>
-                                    加入群组
+                                    Join
                                 </Button>
                             )
                         ) : (

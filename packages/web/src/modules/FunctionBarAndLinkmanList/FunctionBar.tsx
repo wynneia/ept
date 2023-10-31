@@ -231,7 +231,7 @@ function FunctionBar() {
                                             : 'none',
                                     }}
                                 >
-                                    <p>群组</p>
+                                    <p>Group</p>
                                     <div className={Style.groupList}>
                                         {renderSearchGroups(3)}
                                     </div>
