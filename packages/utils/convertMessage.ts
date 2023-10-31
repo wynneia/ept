@@ -41,10 +41,10 @@ function convertSystemMessage(message: any) {
         message.type = 'system';
         message.from._id = 'system';
         message.from.originUsername = message.from.username;
-        message.from.username = '乌贼娘殿下';
+        message.from.username = 'QUEEN';
         message.from.avatar = WuZeiNiangImage;
         message.from.tag = 'system';
-        message.content = `撤回了消息`;
+        message.content = `Deleted a message`;
     }
 }
 
