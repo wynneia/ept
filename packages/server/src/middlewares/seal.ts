@@ -19,7 +19,7 @@ export default function seal(socket: Socket) {
             (await Redis.has(getSealUserKey(socket.data.user)));
 
         if (isSealUser || isSealIp) {
-            cb(SEAL_TEXT);
+            next();
         } else {
             next();
         }
