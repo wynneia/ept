@@ -96,13 +96,13 @@ function InviteInfo() {
                     </div>
                     <div className={Style.info}>
                         <div className={Style.onlineStatus}>
-                            <p className={Style.onlineText}>member: </p>
-                            <div>{group.members}</div>
+                            <p className={Style.onlineText}>member:</p>
+                            <div>{" "}{group.members}</div>
                         </div>
                         {selfId ? (
                             hasLinkman ? (
                                 <Button onClick={handleFocusGroup}>
-                                    发送消息
+                                    Send message
                                 </Button>
                             ) : (
                                 <Button onClick={handleJoinGroup}>

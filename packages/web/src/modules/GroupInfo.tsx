@@ -87,8 +87,8 @@ function GroupInfo(props: GroupInfoProps) {
                 </div>
                 <div className={Style.info}>
                     <div className={Style.onlineStatus}>
-                        <p className={Style.onlineText}>member: </p>
-                        <div>{group.members}</div>
+                        <p className={Style.onlineText}>member:</p>
+                        <div>{" "}{group.members}</div>
                     </div>
                     {hasLinkman ? (
                         <Button onClick={handleFocusGroup}>Send a message</Button>

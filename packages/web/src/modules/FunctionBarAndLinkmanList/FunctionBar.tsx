@@ -137,7 +137,7 @@ function FunctionBar() {
                     <Avatar size={40} src={groups[i].avatar} />
                     <div>
                         <p>{groups[i].name}</p>
-                        <p>{groups[i].members}人</p>
+                        <p>{groups[i].members}</p>
                     </div>
                 </div>,
             );
