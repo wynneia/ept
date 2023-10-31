@@ -660,22 +660,6 @@ function ChatInput() {
                     onFocus={() => toggleInputFocus(true)}
                     onBlur={() => toggleInputFocus(false)}
                 />
-
-                {!isMobile && !inputFocus && (
-                    <Tooltip
-                        placement="top"
-                        mouseEnterDelay={0.5}
-                        overlay={
-                            <span>
-                                支持粘贴图片发图
-                                <br />
-                                全局按 i 键聚焦
-                            </span>
-                        }
-                    >
-                        <i className={`iconfont icon-about ${Style.tooltip}`} />
-                    </Tooltip>
-                )}
             </form>
             <IconButton
                 className={Style.iconButton}
