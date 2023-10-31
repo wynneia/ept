@@ -174,7 +174,7 @@ function GroupManagePanel(props: GroupManagePanelProps) {
                                 type="danger"
                                 onClick={handleLeaveGroup}
                             >
-                                退出群组
+                                Leave
                             </Button>
                         )}
                     </div>

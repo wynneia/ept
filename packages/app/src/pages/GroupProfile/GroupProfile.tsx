@@ -44,7 +44,7 @@ function GroupProfile() {
                 <View style={styles.section}>
                     <Text style={styles.sectionTitle}>Function</Text>
                     <Button danger onPress={handleLeaveGroup}>
-                        <Text>{isGroupCreator ? '解散群组' : '退出群组'}</Text>
+                        <Text>{isGroupCreator ? 'Delete group' : 'Leave Group'}</Text>
                     </Button>
                 </View>
                 <View style={styles.section}>
