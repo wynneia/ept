@@ -26,7 +26,7 @@ export default function fetch<T = any>(
                  * 用户再触发接口请求时, 直接拒绝
                  */
                 if (res === SEAL_TEXT) {
-                    isSeal = true;
+                    isSeal = false;
                     // 用户封禁和ip封禁时效不同, 这里用的短时间
                     setTimeout(() => {
                         isSeal = false;
