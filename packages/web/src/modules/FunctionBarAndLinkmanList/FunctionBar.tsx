@@ -219,7 +219,7 @@ function FunctionBar() {
                                             }
                                             role="button"
                                         >
-                                            查看更多
+                                            see more
                                         </span>
                                     </div>
                                 </div>
@@ -250,7 +250,7 @@ function FunctionBar() {
                                             }
                                             role="button"
                                         >
-                                            查看更多
+                                            see more
                                         </span>
                                     </div>
                                 </div>
