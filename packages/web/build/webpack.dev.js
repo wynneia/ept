@@ -16,13 +16,13 @@ module.exports = merge(common, {
             rewrites: [{ from: /\/invite\/group\/[\w\d]+/, to: '/index.html' }],
         },
         proxy: {
-            '/avatar': 'http://localhost:9200',
-            '/GroupAvatar': 'http://localhost:9200',
+            '/avatar': 'http://localhost:80',
+            '/GroupAvatar': 'http://localhost:80',
             '/Avatar': {
-                target: 'http://localhost:9200',
+                target: 'http://localhost:80',
                 pathRewrite: { '^/Avatar': '/avatar' },
             },
-            '/favicon-*.png': 'http://localhost:9200',
+            '/favicon-*.png': 'http://localhost:80',
         },
     },
     plugins: [new ReactRefreshWebpackPlugin()],
