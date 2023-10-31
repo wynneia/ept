@@ -94,7 +94,7 @@ function HeaderBar(props: Props) {
                         )}
                         {isLogin && isOnline !== undefined && (
                             <b className={styles.count}>{`(${
-                                isOnline ? '在线' : '离线'
+                                isOnline ? 'Online' : 'Offline'
                             })`}</b>
                         )}
                     </span>
@@ -102,7 +102,7 @@ function HeaderBar(props: Props) {
                 {isMobile && (
                     <span className={Style.status}>
                         <div className={connectStatus ? 'online' : 'offline'} />
-                        {connectStatus ? '在线' : '离线'}
+                        {connectStatus ? 'Online' : 'Offline'}
                     </span>
                 )}
             </h2>
